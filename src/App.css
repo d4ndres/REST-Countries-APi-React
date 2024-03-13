@@ -1,0 +1,104 @@
+h1 {
+  font-size: 1.8rem !important;
+}
+
+input {
+  margin: 0 !important;
+}
+input:focus, .mySelect:focus {
+  box-shadow: none !important;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+
+.header {
+  background-color: var(--background);
+}
+
+.container {
+  margin: auto;
+  max-width: 1440px;
+  width: 90%;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+.body {
+  margin-top: 3rem
+}
+
+
+.wrapper-input {
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  padding: .5rem 2rem;
+  gap: 1rem;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+.wrapper-input__icon {
+  stroke: var(--text-main);
+  fill: var(--text-main);
+  width: 20px;
+}
+.wrapper-input__input {
+  outline: none;
+} 
+
+.mySelect {
+  background-color: var(--background);
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  color: var(--text-main);
+  outline: none;
+  width: 100%;
+  max-width: 200px;
+}
+
+.countries {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 4rem;
+}
+
+.country {
+  background: var(--background);
+}
+
+.county-info {
+  padding: 0 1.5rem 2rem;
+}
+
+.county-info h3 {
+  margin: 1rem 0;
+}
+
+.county-info p{
+  margin: .25rem 0;
+}
+
+.countries img {
+  height: 165px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
