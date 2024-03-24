@@ -102,3 +102,10 @@ input:focus, .mySelect:focus {
   object-fit: cover;
   object-position: center;
 }
+
+.button-styles {
+  cursor: pointer;
+}
+.button-styles:hover {
+  color: var(--button-hover)
+}

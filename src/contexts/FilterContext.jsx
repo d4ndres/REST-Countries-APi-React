@@ -2,10 +2,12 @@ import { useState, createContext } from 'react';
 
 export const FilterContext = createContext();
 
-export function FilterProvider({children}) {
+import PropTypes from 'prop-types';
+
+export function FilterProvider({ children }) {
   const [filters, setFilters] = useState({
     search: '',
-    region: null
+    region: 'all'
   });
 
   return (
@@ -14,3 +16,7 @@ export function FilterProvider({children}) {
     </FilterContext.Provider>
   )
 }
+
+FilterProvider.propTypes = {
+  children: PropTypes.node.isRequired
+};

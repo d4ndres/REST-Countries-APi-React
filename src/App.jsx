@@ -29,7 +29,7 @@ export function App() {
       <header className='header'>
         <section className='container'>
           <h1>Where in the world?</h1>
-          <article onClick={handle}>{theme == 'dark' ? '🌙 Dark Mode' : '☀ Light Mode'}</article>
+          <article className="button-styles" onClick={handle}>{theme == 'dark' ? '🌙 Dark Mode' : '☀ Light Mode'}</article>
         </section>
       </header>
       <section className='body'>

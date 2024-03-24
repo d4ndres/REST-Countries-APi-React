@@ -16,7 +16,7 @@ export function useFilter() {
   }
 
   const dispatchRegion = (region) => {
-    setFilters({ ...filters, region });
+    setFilters({ ...filters, region: region });
   }
 
 

@@ -5,8 +5,8 @@ import { useFilter } from '../hooks/useFilter'
 export function Filters() {
   const { filters, dispatchSearch, dispatchRegion } = useFilter()
 
-  function handleInput(e) {
-    dispatchSearch(e.target.value)
+  function handleInput(newValue) {
+    dispatchSearch(newValue)
   }
 
   function handleSelect(e) {
@@ -14,8 +14,8 @@ export function Filters() {
   }
 
   return (
-    <section className='flex justify-between' value={filters.search} onChange={handleInput}>
-      <MyInput />
+    <section className='flex justify-between' >
+      <MyInput value={filters.search} callbackOnChange={handleInput}/>
 
       <select name="region" id="region" className='mySelect' onChange={handleSelect}>
         <option value="all">Filter by Region</option>

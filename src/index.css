@@ -12,7 +12,7 @@
   --code: #000;
   --animation-duration: 0.1s;
   --button-base: #d0cfcf;
-  --button-hover: #9b9b9b;
+  --button-hover: #040a0f;
   --scrollbar-thumb: #aaa;
   --scrollbar-thumb-hover: var(--button-hover);
   --form-placeholder: #949494;
@@ -36,7 +36,7 @@
   --code: #ffbe85;
   --animation-duration: 0.1s;
   --button-base: #0c151c;
-  --button-hover: #040a0f;
+  --button-hover: #9b9b9b;
   --scrollbar-thumb: var(--button-hover);
   --scrollbar-thumb-hover: #000;
   --form-placeholder: #a9a9a9;
