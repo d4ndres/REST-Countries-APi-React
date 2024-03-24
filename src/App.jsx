@@ -1,27 +1,12 @@
-import { useState, useRef, useEffect } from 'react'
-import './App.css'
-import { Filters } from './components/Filters'
-import { Countries } from './components/Countries'
 
+import './App.css'
+import { Catalog } from './views/Catalog'
+import { Country } from './views/Country'
+import { SetStyle } from './components/SetStyle'
+import { useState } from 'react'
 
 export function App() {
-  const [theme, setTheme] = useState('dark')
-
-  function handle() {
-    const html = document.querySelector('html')
-    if (theme === 'dark') {
-      setTheme('light')
-      html.setAttribute('data-theme', 'light')
-    } else {
-      setTheme('dark')
-      html.setAttribute('data-theme', 'dark')
-    }
-  }
-
-  useEffect(() => {
-    // mounted
-    handle()
-  }, [])
+  const [currentPath] = useState(window.location.pathname)
 
 
   return (
@@ -29,16 +14,12 @@ export function App() {
       <header className='header'>
         <section className='container'>
           <h1>Where in the world?</h1>
-          <article className="button-styles" onClick={handle}>{theme == 'dark' ? '🌙 Dark Mode' : '☀ Light Mode'}</article>
+          <SetStyle
+         />
         </section>
       </header>
-      <section className='body'>
-        <section className='container'>
-          <Filters />
-          <Countries />
-        </section>
-      </section>
-
+      { currentPath !== '/' && <Country />}
+      { currentPath === '/' && <Catalog />}
     </>
   )
 }

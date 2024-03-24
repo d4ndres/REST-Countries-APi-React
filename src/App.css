@@ -103,9 +103,66 @@ input:focus, .mySelect:focus {
   object-position: center;
 }
 
-.button-styles {
+.button-style {
   cursor: pointer;
 }
-.button-styles:hover {
+.button-style:hover {
   color: var(--button-hover)
+}
+
+.link {
+  background-color: var(--background);
+  color: var(--text-muted);
+  padding: .5rem 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.title-country {
+  margin-bottom: 0;
+}
+
+.aboutCountry {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax( 400px ,1fr));
+  gap: 8rem;
+  padding-bottom: 2rem;
+}
+
+.figure-one-flag {
+  margin: 0;
+  line-height: 0;
+}
+
+.figure-one-flag img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.info-country {
+  font-size: .9rem;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+  gap: 1rem;
+}
+
+.infos-country {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.border-countries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  align-items: center;
 }
