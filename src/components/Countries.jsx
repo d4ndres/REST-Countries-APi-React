@@ -10,7 +10,7 @@ export function Countries() {
   return (
     <section className='countries'>
       {countries.map((country, index) => (
-        <a href={`/country/${country.name}`} key={index} className='country'>
+        <a href={`/alpha/${country.alpha2Code}`} key={index} className='country'>
           <img src={country.flag} alt={country.name} />
           <section className="county-info">
             <h3>{country.name}</h3>

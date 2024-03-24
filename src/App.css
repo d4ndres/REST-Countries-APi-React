@@ -82,7 +82,13 @@ input:focus, .mySelect:focus {
 
 .country {
   background: var(--background);
+  color: var(--form-text);
 }
+
+.country:hover {
+  text-decoration: none;
+}
+
 
 .county-info {
   padding: 0 1.5rem 2rem;
